@@ -41,10 +41,9 @@
       transitionHighlighter({ x, y, width, height })
     }
     function transitionHighlighter({ x, y, width, height }) {
-      highlighter.style.left = `${x}px`
-      highlighter.style.top = `${y}px`
       highlighter.style.width = `${width}px`
       highlighter.style.height = `${height}px`
+      highlighter.style.transform = `translate(${x}px, ${y}px)`
     }
   </script>
 </body>
